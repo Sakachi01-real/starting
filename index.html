@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- importing icon on the browser tab section  -->
+  <link rel="icon" href="./using.jpg" />
+  <title>web dev class 1</title>
+
+  <style>
+    /* css group styling */
+    /* single one is an element styling */
+    h1,
+    h2,
+    h3 {
+      color: red
+    }
+
+    body {
+      color: rgb(236, 135, 3);
+    }
+
+    p {
+      color: darkgreen;
+      border: 3px dashed black
+    }
+
+    /* id styling */
+    #paragraph {
+      color: gold;
+      font-size: 44px;
+      background-color: darkgreen;
+      border: 5px;
+    }
+
+    #cars {
+      font-size: 20px;
+      border: 2px solid violet;
+    }
+
+    ol#bev>li {
+      background-color: aqua;
+    }
+
+    /* class styling */
+    .fresh {
+      font-size: 25px;
+      color: brown;
+      background-color: gold;
+    }
+
+    /* child selector */
+    ul#cars>li {
+      color: chocolate;
+      background-color: black;
+    }
+
+    ul#sizes>li {
+      background-color: orange;
+      color: black;
+      border: 1px solid green;
+    }
+
+    ol>li {
+      background-color: rgb(10, 3, 0);
+      font-size: 20px;
+    }
+
+    /* .cars{ border: 2px dashed gold; color: blue; background-color: grey;} */
+
+    /* ids are styled with # 
+    while class are styled with a dot. */
+  </style>
+</head>
+
+<body>
+  hello world, this is my first real attempt
+
+  <!---non self closing-->
+  <hi></hi>
+  <ASIDE></ASIDE>
+  <p></p>
+  <!--self closing -->
+  <input /> <!--for box-->
+  <br />
+  <hr> <!--line-->
+  <link />
+  <!--comment-->
+
+  <!--multi line comment -->
+
+  <!--freshout 
+boss
+favour one mama-->
+
+  <!--element is made up opening tag,a content and closing tag-->
+  <P id="paragraph" class="paragraph">this is a paragraph</P>
+  <h1>heading</h1>
+  <HI>the is heading 1</HI>
+  <h2>this is heading 2</h2>
+  <H3 class="fresh">heading 3</H3>
+
+  <!--attributes contain properties of elements and found in opening tags after the name of the tag -->
+  <a href="https://www.x.com" target="blank">this and anchor element</a>
+  <a href="#"></a> <!--void url-->
+
+  <img src="./using.jpg" alt="a big head text" title="big head favour" width="120px" sizes="200px" />
+  <!--you can use it bring in image in the body-->
+  <!--alt""-used to describe an image or object-->
+  <!--TEXT FORMATTING -->
+  <P>
+    Lorem ipsum dolor sit amet <span style="color: lawngreen;" font-size="16px"> adipisicing elit.</span> Maiores
+    repudiandae praesentium nobis ex nihil architecto
+    doloribus labore <b>saepe ipsa deleniti ducimus dolorum dolor nisi aut, culpa quis enim eius odit similique aperiam
+      placeat! Aut eligendi quae eius illum, ullam repudiandae necessitatibus maiores delectus debitis eveniet incidunt
+      quam animi <del> quos error </del> optio </b> temporibus consectetur. Iure voluptas eveniet dolorum qui vel
+    quibusdam, adipisci
+    eos tempore possimus exercitationem ullam in, voluptates debitis suscipit voluptatum accusantium sunt saepe
+    reiciendis libero ex <I><B><u>et veritatis? Ipsam sapiente impedit iusto ducimus ipsum illo excepturi eius, aperiam,
+          quam
+          neque rem debitis obcaecati nesciunt.</u></B></I> Amet itaque at consectetur modi omnis non dicta voluptatum
+    numquam reiciendis
+    quia quos sunt animi suscipit quas, quae obcaecati nisi, laborum aliquam corporis aut fugiat. Provident porro maxime
+    accusantium <em>beatae vel possimus dolorem doloremque maiores quos, accusamus dicta quaerat repellendus fugiat. Ab
+      recusandae dolorum nam architecto</em> beatae odit delectus ullam provident? Eum, illum saepe.
+    CO<sub>2</sub>
+    X<sup>3</sup>
+  <blockquote style="color: blueviolet;">sakachi2024</blockquote>
+  or more information <a href="sakstores.mobirisesite.com" target="blank">click me</a>
+
+
+
+  </P>
+  <!--TEXT FORMATING-->
+  <U></U> <!---underline-->
+  <I></I> <!--italics-->
+  <B></B> <!--bold-->
+  <EM></EM> <!--emphasis-->
+  <strong></strong> <!--strongly emphasis-->
+  <sub></sub> <!--subscript-->
+  <sup></sup> <!---Superscript-->
+  <blockquote></blockquote> <!--FOR quoting-->
+  <del></del> <!--strikethrough -->
+  <span></span> <!-- span can be used to add colour to a text  -->
+
+  <!--inline take the full width of it contents-->
+  <!--block level elements take the full with of the patrent container-->
+
+  <!-- e.g of inline element-->
+  <span style="background-color: blue;">this is a span- an inline element</span>
+  <a style="background-color: red;">this an anchor - an inline element</a>
+  <input value="this an input box an inline element" style="background-color: green;" />
+
+  <!--e.g of block element-->
+  <div style="width: 300px">
+    <div style="background-color: blueviolet;" style="width:150PX">this is a div</div>
+  </div>
+
+  <P style="background-color: brown;" style="width:150px">the is a paraphraph</P>
+  <UL style="background-color: burlywood;">an unorder list</UL>
+  <OL style="background-color: darkgreen;">ordered list</OL>
+
+  <!--style='background colour:' - is used the give colour-->
+
+  <!--working with multimedia-->
+  <audio controls autoplay loop muted>
+    <source src="./working audio.mp3" type="audio/mp3" />
+    this audio file is not supported by your browser.
+  </audio>
+
+  <video controls autoplay muted width="200px" height="400px">
+    <source src="./test video.mp4" type="video/mp4" />
+    this video file is not supported by your browser.
+  </video>
+
+  <!-- embeddin a youtube video -->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/HRmzSpdujFk?si=KofTerRqEIPDemLD"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <!-- embedding maps -->
+  <div style="width: 500px;;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253728.25969139818!2d3.1061616164062507!3d6.457636600000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b863cf350741b%3A0xf17c271ab8a175b0!2sLagos%20Trade%20Fair%20Complex!5e0!3m2!1sen!2sng!4v1726698339638!5m2!1sen!2sng"
+      width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  another
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253728.25969139818!2d3.1061616164062507!3d6.457636600000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b863cf350741b%3A0xf17c271ab8a175b0!2sLagos%20Trade%20Fair%20Complex!5e0!3m2!1sen!2sng!4v1726698339638!5m2!1sen!2sng"
+    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <br /><br />
+  <!-- FORMS -->
+
+  <form action="action-page.php" method="post" onsubmit="submitdata">
+    <label for="firstName">first name</label>
+    <!-- camel casing e.g fName,lastName,allowFullscreen  -->
+    <input type="text" firstname="firstName" value="" placeholder="e.g mami" /><br />
+    <br /><br />
+
+    <label for="lastName">last name</label>
+    <input type="text" lastname="lastName" value="" placeholder="e.g emma" /> <br />
+    <br /><br />
+
+
+    <label for="eMail">Email</label>
+    <input type="text" eMail="eMail" value="" placeholder="@yourmail.com" /><br />
+    <br /><br />
+
+    <label for="phoneNumber">Phone number</label>
+    <input type="number" name="phoneNumber" value="" placeholder="080665544336" required /><br />
+    <br /><br />
+
+    <label for="sreetnumber">street number</label>
+    <input type="number" name="street number" placeholder="2" min="1" max="1000" /><br />
+    <br /><br />
+
+    <label for="password">password</label>
+    <input type="password" name="password" placeholder="set password" /><br />
+    <br /><br />
+
+    <!-- how to put a checkbox -->
+
+    <label for="multichoice">please click all that apply</label><br />
+    <input type="checkbox" name="question 1" value="" /> oranges are yellow in color<br />
+    <!-- check by default on loading  -->
+    <input type="checkbox" name="question2" value="" checked /> oranges are green in colour <br />
+    <input type="checkbox" name="question3" value="" /> oranges are blue in colour <br />
+    <br /><br />
+
+    <!-- how to select one option using radio type  -->
+    <label for="male">male</label>
+    <input type="radio" name="gender" value="male" />
+
+    <label for="female">female</label>
+    <input type="radio" name="gender" value="female" /><br />
+    <br /><br />
+
+    <label for="multichoice">select the correct one</label><br />
+    <input type="radio" name="question" value="" /> oranges are yellow in color<br />
+    <!-- check by default on loading  -->
+    <input type="radio" name="question" value="" checked /> oranges are green in colour <br />
+    <input type="radio" name="question" value="" /> oranges are blue in colour <br />
+    <br /><br />
+
+    <label for="date"> what your birthday</label>
+    <input type="date" name="birthday" /><br />
+    <br /><br />
+
+    <textarea rows="0" cols="0">
+  write a brief summary
+</textarea><br /><br />
+    <br />
+
+    <input type="submit" value="submit" />
+
+    <!-- tel,email,text,password,url,checkbox,radio,number,date 
+        placeholder give the inputer what to put nd dont need to clear unlike puting value u hv to claear-->
+    <!-- <br (LINE BREAK) is used for make making break to the next line />-->
+    <!-- JSON- JAVASCRIPT OBJECT NOTATION  -->
+  </form>
+  <br /><BR /><BR />
+
+
+
+
+  <!-- TABLES -->
+
+  <!-- table tag is used to create tables -->
+  <!-- TH USED FOR TABLE HEAD  -->
+  <!-- TR USED FOR TABLE ROLL -->
+  <!-- TD IS USED FOR TABLE DATE -->
+
+  <table style="border:1px solid black">
+    <tr style="padding:4px solid red;">
+      <th style="border: 5px solid green;">
+        S/N
+      </th>
+      <TH style="border: 5px solid green;">
+        FRUITS
+      </TH>
+
+      <th style="border: 5px solid green;">
+        QUANTITY
+      </th>
+
+    </tr>
+
+    <TR>
+      <TD>1</TD>
+      <td>MANGO</td>
+      <TD>30</TD>
+
+    </TR>
+
+    <TR>
+      <TD>2</TD>
+      <TD>APPLE</TD>
+      <TD>50</TD>
+    </TR>
+  </table>
+
+  <!-- TYPES OF LIST  -->
+  <!-- UNORDERED LIST -->
+  <H3 style="font-size: 24px;background-color: blue;">TYPES OF CARS</H3>
+  <UL id="cars">
+    <LI>VOLVE</LI>
+    <LI>BENZ</LI>
+    <LI>BMW</LI>
+    <LI>KIA</LI>
+    <LI>TOYOTA</LI>
+  </UL> <br /> <br />
+
+  <ul id="sizes">
+    <li> big </li>
+    <li>small </li>
+    <li>smaller </li>
+  </ul>
+
+  <OL>
+    <H3>BEVERAGES</H3>
+    <!-- ORDERED LIST -->
+    <LI style="color: blue;">MILK</LI>
+    <LI>MILO</LI>
+    <LI>SUGAR</LI>
+    <LI>COWBELL</LI>
+  </OL>
+
+  <OL id="bev">
+    <!-- ORDERED LIST -->
+    <H3 style="color: green; font-size: 30px;">BEVERAGES</H3>
+    <LI>MILK</LI>
+    <LI>MILO</LI>
+    <LI>SUGAR</LI>
+    <LI>COWBELL</LI>
+  </OL>
+  <!-- css- cascading styler sheet -->
+
+  <!-- 3 ways of adding styles to html -->
+
+  <!-- *inline styling-is styling line by line from the opening of the tag*-->
+
+  <!-- *styling with the style tag within the head tag using the style tag "<style>
+e.g hi,p1,body{}
+  </style>"* -->
+
+
+  <!-- *using external styles sheet using id(#) and class(.)*
+   id reigns over the class rule  but inline superside all oda 2-->
+
+  <!-- id is unique should be one and a class can be use to repeat style  -->
+
+
+
+
+</body>
+
+</html>

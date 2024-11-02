@@ -1,0 +1,66 @@
+
+
+.MD-P{
+    font-size: 65px;
+background-color: brown;
+color: white;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+@media screen and (max-width:768px) {
+    .MD-P{
+        font-size: 30px;
+         background-color: black;
+    }
+}
+
+@media(MIN-WIDTH: 769PX) AND (Max-width: 1024px) {
+.MD-P{
+    background-color: blue;
+    font-size: 45px;
+}
+}
+/* to apply the flexbox property u need to  make the parents container to display flex  */
+#flexboxx{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+
+#flexboxx > div{
+    border: 2px solid red;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 350px;
+    height: 350px;
+
+}
+
+#gridbox{
+    display: grid;
+    /* with grid template column you can define the number of columns and sizes  */
+    /* grid-template-column: auto auto, auto, auto  */
+    /* grid-template-columns: repeat(4,1fr); */
+    /* fr stands for fraction */
+    /* for responsiveness 200px is the size  */
+    grid-template-columns: repeat(auto-fill , minmax(200px , 1fr)); 
+    /* column-gap:50px; */
+    /* row-gap: 50px; */
+
+    gap: 150px 50px;
+
+}
+
+#gridbox> div{
+
+}

@@ -1,0 +1,129 @@
+* {
+    /* background-color: gold; */
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#h1 {
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px white;
+}
+
+#pbox1 {
+    font-style: italic;
+    background-color: azure;
+    box-sizing: content-box;
+
+}
+
+#pbox2 {
+    font-style: italic;
+    background-color: azure;
+    box-sizing: content-box;
+
+}
+
+.img {
+    margin: 20px;
+    text-align: center;
+    scale: 100px;
+    padding: 20px;
+}
+
+.p1 {
+    border: 2px solid black;
+    background-color: azure;
+    float: left;
+    width: 48%;
+    height: 200px;
+    padding: 15px;
+    text-align: justify;
+    overflow-y: auto;
+
+}
+
+
+
+.p2 {
+    border: 2px solid black;
+    background-color: azure;
+    float: right;
+    /*used for floating or moving left or right*/
+    width: 48%;
+    height: 200px;
+    padding: 15px;
+    /*padding used inside the box*/
+    text-align: justify;
+    overflow-y: auto;
+    /*for scolling*/
+
+}
+
+
+/* text-align: end; */
+
+.add1 {
+    text-align: end;
+    padding: 10px;
+    color: rgb(47, 50, 255);
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#FOOTER {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+.F1 {
+    background-color: black;
+
+}
+
+#MENU {
+    color: black;
+    text-align: center;}
+
+body {
+    /* background-image:url(./download.jpeg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed
+}
+
+#divbox{
+    width: 300px;
+    height: 300px;
+    border: 3px solid rgb(251, 255, 3);
+    border-style: groove;
+    background-color: rgba(0, 245, 102, 0.562);
+    border-width: 6px;
+    border-radius: 50%;
+    /* border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%; */
+     box-shadow: 100px, 150px, red;
+
+}
+
+.abstractbg{ 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    
+}
+
+/* dimention */
+/* vw- view port width */
+/* vh- viewport height */
+/* %- percentage - will be calc based on the dimention of the element */
+/* px- pixels- fixed */
+/* en- en - relative to d dimention of the parent  */
+/* ren- root en - relative to the root*/

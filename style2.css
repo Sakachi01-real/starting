@@ -1,0 +1,54 @@
+body{
+    background-color: beige;
+}
+
+.DIVBOX1{
+    display: flex; /*mk the parent to display flex*/
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    flex-direction: column; /*flex direction is row by default*/
+    flex-wrap: wrap;
+    justify-content: center;  /*JUSTIFY YOUR CONTENT FROM LEFT TO RIGHT*/
+    align-items: center;
+    /* ALIGN IS TOP TO BUTTOM AND JUSTIFY FRM LEFT TO RIGHT */
+}
+
+.DIVBOX1> div{
+    width: 75px;
+    height: 75px;
+    background-color: brown;
+    margin: 6px;
+    padding: 10px;
+}
+
+/* MEDIA QUERIES */
+
+/* from 0px of wdidth to  768px of screen width, you want the defined style to apply */
+@media screen and  (max-width:768px) {
+    body{
+        background-color: green;
+        font-size: 20px;
+    }
+    
+}
+
+/* @media (max-width:1024px) { */
+ /* body{ background-color: yellow; } 
+ }*/
+    
+
+
+/* from 769px of wdidth to  1024pxpx of screen width, you want the defined style to apply */
+@media  (min-width:769px) and (max-width:1024px) {
+    body{background-colour: red;
+        font-size:60px;
+    }
+    
+}
+
+/* from 1024px of width and greater  you want the defined style to apply*/
+@media (min-width:1024px)  and (max-width: 1500px){
+body{
+    background-color: blueviolet;
+    font: size 100PX;

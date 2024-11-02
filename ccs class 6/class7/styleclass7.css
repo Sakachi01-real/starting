@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+#td{
+    
+    width: 250px;
+height: 250px;
+border: 3px solid red;
+background-color: azure;
+/* transition takes 2 value as a min and max 4 values
+1st value: transition property
+2nd value: transition duration
+3rd value: transition timinh func
+4th value: transiton delay
+ */
+transition: width 4s ease-in-out 2s;
+background-color: green 5s;
+transform: 10s ease
+;
+}
+
+#td:hover{
+    width:50px ;
+    cursor: pointer;
+    height: 500px ;
+    background-color: aqua;
+    transform: rotate(9deg);
+
+}
+
+#cont{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+

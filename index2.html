@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>css class 2</title>
+
+    <!-- <style> -->
+        /* styling  with an elemnt selector */
+
+        p {
+            color: green;
+            background-color: black;
+        }
+
+        /* id selector */
+        #head2 {
+            color: blueviolet;
+            background-color: black;
+            font-style: inherit;
+            font-size: 40px;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        /* class selector */
+        .head5 {
+            background-color: antiquewhite;
+            letter-spacing: 2px;
+
+        }
+
+        /* universal selector - styles everytin*/
+        * {
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif:'Courier New', Courier, monospace;
+            background-color: brown; box-sizing: border-box;
+        }
+
+        /* attribute selector */
+        input[type="number"] {
+            padding: 50px;
+            border: 2px solid blue;
+        }
+
+        input[type="text"] {
+            border: 2px solid green;
+        }
+
+        input [type="password"] {
+            border: 2px;
+        }
+
+        /* css group selectors */
+        h2,
+        h5,
+        input,
+        p {
+            font-size: 30px;
+        }
+
+        /* child seletor  */
+        ol>li {
+            text-decoration: solid;
+        }
+
+        /* SPECIFICITY */
+        /* /* detertermines the order of priority for applying style */
+
+        /* - priority levels */
+        /* high - we have inline styling*/
+        /* medium - ids*/
+        /* normal- classes, pseudo-classes,attribute selectors*/
+        /* low- elements, pseudo-element */
+
+        /* pseudo-classes  like: hover, visited,checked,focused*/
+        #p2:hover {
+            background-color: coral;
+        }
+
+        input:focus {
+            border: 10px solid green;
+        }
+
+        /* pseudo-elements like before, after, first letter, */
+        li::before {
+            content: "a typical african country is:";
+            color: blueviolet;
+
+        }
+
+        #p2::after {
+            content: " my pseudo-element"
+        }
+
+        /* BOX MODEL  */
+        #boxmodel {
+            width: 200px;
+            height: 200px;
+            border: 2px solid blue;
+            padding: 50px;
+            margin: 50px;
+        }
+
+        /* true width: the width plus padding left plus padding right plus border left plus border right;
+        200px+50px+50px+2px+2px+2px= 304px */
+    <!-- </style> -->
+
+</head>
+
+<body>
+
+    <!-- inline stlying  -->
+    <!-- styling with the styl3 tag within the head tag -->
+    <!-- styling using an external style sheet> -->
+
+    <!-- div act like a container  -->
+
+    <!-- DIFF BTW ID AND CLASS - IDs MUST BE UNIQUE WHILE CLASSes CAN HAVE REPETION -->
+    <div>
+
+        <!-- inline styling -->
+        <p style="color: blue ; font-size: 20px; text-transform: uppercase;">
+            testing my inline syling
+        </p>
+
+        <p id="p2"> testing style within the head tag</p>
+
+        <h2 id="head2"> This heading indicate id styling</h2>
+
+        <h5 class="head5"> the is a heading that shows class styling </h5>
+
+        <input type="text" />
+        <input type="number" />
+        <input type="password">
+
+        <ol>
+            <li>GHANA</li>
+            <LI>NIG <SPAn style="color:green; text-transform: lowercase;">ERIA</SPAn></LI>
+            <LI>KENYA</LI>
+            <LI>CAMEROON</LI>
+        </ol>
+
+    </div>
+
+
+    <!-- box model and layout -->
+    <div id="boxmodel">
+        This my box content
+    </div>
+
+
+</body>
+
+</html>
